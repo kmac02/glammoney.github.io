@@ -130,6 +130,8 @@ h1, .h1 {
   }
 }
 
+
+
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
 }
@@ -527,7 +529,7 @@ progress {
 }
 
 .display-4 {
-  font-size: calc(1.475rem + 2.7vw);
+  font-size: calc(1.3rem + 2.7vw);
   font-weight: 300;
   line-height: 1.2;
 }
@@ -7726,7 +7728,7 @@ textarea.form-control-lg {
 }
 
 .p-5 {
-  padding: 3rem !important;
+  padding: 2rem !important;
 }
 
 .px-0 {
@@ -10860,9 +10862,10 @@ html {
 header.masthead {
   position: relative;
   overflow: hidden;
-  padding-top: calc(7rem + 72px);
+  padding-top: calc(5rem + 50px);
   padding-bottom: 7rem;
-  background: linear-gradient(0deg, #b58b4b 0%, #0F0F0F 100%);
+  background-color: #0F0F0F;
+  /* background: linear-gradient(0deg, #b58b4b 0%, #0F0F0F 100%);*/
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -10883,14 +10886,48 @@ header.masthead .bg-circle {
   z-index: 0;
   position: absolute;
   border-radius: 100%;
-  background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+  background: linear-gradient(30deg, #D3AF37 0%, #D3AF37 100%);
+  clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%);  
 }
-/*header.masthead .bg-circle-1 {
-  height: 90rem;
-  width: 90rem;
+header.masthead .lines {
+  height: 10rem;
+  width: 10rem;
   bottom: -55rem;
   left: -55rem;
 }
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-top: 3px solid white;
+}
+
+header.masthead .star {
+  z-index: 0;
+  position: absolute;
+  border-radius: 100%;
+  width: 200px;  
+  aspect-ratio: 1; 
+  /* or more simple
+   clip-path: polygon(50% 0,
+    calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+    calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+   */
+}
+
+header.masthead .bg-star-1 {
+  height: 40rem;
+  width: 40rem;
+  bottom: -10rem;
+  left: -10rem;
+}
+/*
 header.masthead .bg-circle-2 {
   height: 50rem;
   width: 50rem;
