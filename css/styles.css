@@ -10835,6 +10835,7 @@ html {
 
 .btn-xl {
   text-transform: uppercase;
+  color: white;
   padding: 1.5rem 3rem;
   font-size: 0.9rem;
   font-weight: 700;
@@ -10885,10 +10886,18 @@ header.masthead .masthead-content .masthead-subheading {
 header.masthead .bg-circle {
   z-index: 0;
   position: absolute;
-  border-radius: 100%;
+  padding-top: calc(5rem + 50px);
   background: linear-gradient(30deg, #D3AF37 0%, #D3AF37 100%);
   clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%);  
 }
+
+header.masthead .bg-star-1 {
+  width: 20rem;
+  height: 20rem;
+  top: 5rem;
+  left: 20%;
+}
+
 header.masthead .lines {
   height: 10rem;
   width: 10rem;
@@ -10906,27 +10915,22 @@ hr {
   border-top: 3px solid white;
 }
 
-header.masthead .star {
+/*header.masthead .star {
   z-index: 0;
-  position: absolute;
+  position: relative;
   border-radius: 100%;
-  width: 200px;  
+  width: 100px;  
   aspect-ratio: 1; 
-  /* or more simple
+  or more simple
    clip-path: polygon(50% 0,
     calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
     calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
     calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
     calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
-   */
-}
+   
+}*/
 
-header.masthead .bg-star-1 {
-  height: 40rem;
-  width: 40rem;
-  bottom: -10rem;
-  left: -10rem;
-}
+
 /*
 header.masthead .bg-circle-2 {
   height: 50rem;
